@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Inline-block</title>
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap">
-        <link rel="stylesheet" href="./css/styles2.css">
-    </head>
-    <body>
-        <div id="wrapper" >
-            <div id="header" class="inline_block">
-                <p>HEADER</p>
-            </div>
-            <div id="leftsidebar" class="inline_block">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap">
+    <link rel="stylesheet" href="./css/styles2.css">
+    <title>Inline-blocks</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <p>HEADER</p>
+        </header>
+        <main id="main">
+            <aside id="leftsidebar">
                 <p>SIDENAV</p>
-            </div>
-            <div id="content" class="inline_block">
+            </aside>
+            <section id="content">
                 <p>MAIN CONTENT</p>
-            </div>
-            <div id="rightsidebar" class="inline_block">
+            </section>
+            <aside id="rightsidebar">
                 <p>SIDEBAR</p>
-            </div>
-            <div id="footer" class="inline_block">
-                <p>FOOTER</p>
-            </div>
-        </div>
-    </body>
+            </aside>
+        </main>
+        <footer id="footer">
+            <p>FOOTER</p>
+        </footer>
+    </div>
+</body>
 </html>

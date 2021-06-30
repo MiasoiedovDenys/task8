@@ -2,15 +2,16 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 15px;
     background-color: black;
+    width: 100%;
+    height: 100%;
 }
 
 #wrapper {
     position: relative;
     overflow-x: hidden;
-    overflow-y: hidden;
-    display: inline-block;
-    margin: 25% 10% 5% 25%;
     border: solid whitesmoke;
+    width: 100%;
+    height: 100%;
 }
 
 p {
@@ -19,44 +20,50 @@ p {
     padding: 40px;
 }
 
+#main {
+margin-left: 1px;
+margin-right: -9px;
+}
+
 #header {
     width: 100%;
+    min-height: 150px;
     background-color: rgb(42, 42, 155);
-    height: 100px;
-    vertical-align:baseline;
-    display: inline-block;
 }
 
 #content {
     background-color: rgb(169, 223, 63);
     width: 60%;
-    height: 300px;
+    min-height: calc(100vh - 300px);
+    justify-self: center;
     border: solid whitesmoke;
     display: inline-block;
-    margin-left: -5px;
-    margin-right: -5px;
+    vertical-align: middle;
+    margin-left: -6px;
 }
 
 #leftsidebar {
     background-color: rgb(255, 108, 157);
     width: 20%;
-    height: 300px;
+    min-height: calc(100vh - 300px);
     border: solid whitesmoke;
     display: inline-block;
-    margin-left: -3px;
+    vertical-align: middle;
+    margin-left: -6px;
 }
 
 #rightsidebar {
     background-color: rgb(255, 108, 157);
-    width: 21%;
-    height: 300px;
+    width: 20%;
+    min-height: calc(100vh - 300px);
     border: solid whitesmoke;
     display: inline-block;
-    margin-right: -5px;
+    vertical-align: middle;
+    margin-left: -6px;
 }
 
 #footer {
-    height: 100px;
+    min-height: 150px;
     width: 100%;
     background: #84adf8;
     display: inline-block;
